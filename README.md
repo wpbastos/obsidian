@@ -23,7 +23,7 @@ Auto-memory is disabled at user scope. All knowledge capture is intentional.
 ### 1. Clone the vault
 
 ```bash
-git clone <repo> ~/Projects/_obsidian
+git clone https://github.com/wpbastos/obsidian.git ~/Projects/_obsidian
 cd ~/Projects/_obsidian
 ```
 
