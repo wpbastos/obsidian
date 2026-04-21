@@ -3,7 +3,7 @@
   "search": "-path:meta -path:.raw -path:.scratch -path:docs -path:_templates -path:_attachments -file:CLAUDE",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": true,
+  "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
   "colorGroups": [],
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.7522372491883194,
+  "scale": 1.4698962979688481,
   "close": true
 }
