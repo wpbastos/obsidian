@@ -1,0 +1,19 @@
+{
+  "attachmentFolderPath": "_attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "wiki",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "showUnsupportedFiles": false,
+  "showLineNumber": true,
+  "userIgnoreFilters": [
+    ".raw/",
+    ".scratch/",
+    "docs/",
+    "_templates/",
+    "_attachments/",
+    "CLAUDE.md",
+    ".base"
+  ]
+}

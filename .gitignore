@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Obsidian session state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian plugins (reinstall via community-plugins.json — also avoids leaking REST API key)
+.obsidian/plugins/
+
+# Raw input dumps and manifest (rebuilt from external sources)
+.raw/*
+!.raw/.gitkeep
+
+# Attachments (ignore contents but preserve folder)
+_attachments/*
+!_attachments/.gitkeep
+
+# Scratch
+.scratch/
+
+# Local Claude Code settings (machine-specific)
+.claude/settings.local.json
+CLAUDE.local.md

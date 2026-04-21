@@ -1,0 +1,22 @@
+{
+  "collapse-filter": true,
+  "search": "-path:meta -path:.raw -path:.scratch -path:docs -path:_templates -path:_attachments -file:CLAUDE",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1.7522372491883194,
+  "close": true
+}

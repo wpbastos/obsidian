@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  LaunchAgent template for the Obsidian raw-watcher.
+
+  Substitute these placeholders before installing:
+    {{HOME}}         - your home directory (e.g., /Users/yourname)
+    {{VAULT_PATH}}   - absolute path to the vault (e.g., /Users/yourname/Projects/_obsidian)
+
+  Or run install-watcher.sh which handles substitution + launchctl load automatically.
+
+  Install:
+    cp com.obsidian-vault.raw-watcher.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.obsidian-vault.raw-watcher.plist
+
+  Stop:
+    launchctl unload ~/Library/LaunchAgents/com.obsidian-vault.raw-watcher.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.obsidian-vault.raw-watcher</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>{{HOME}}/bin/obsidian-raw-watcher.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>{{HOME}}/Library/Logs/obsidian-raw-watcher.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>{{HOME}}/Library/Logs/obsidian-raw-watcher.err.log</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>VAULT_PATH</key>
+        <string>{{VAULT_PATH}}</string>
+    </dict>
+</dict>
+</plist>
